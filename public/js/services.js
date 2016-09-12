@@ -16,7 +16,7 @@ bookWishlistAppServices.factory('userService', ['$http', 'localStorageService', 
 
 	function signup(name, email, password, onSuccess, onError) {
 
-		$http.post('/api/auth/signup', 
+		$http.post( baseUrl + '/api/auth/signup', 
 		{
 			name: name,
 			email: email,
@@ -37,7 +37,7 @@ bookWishlistAppServices.factory('userService', ['$http', 'localStorageService', 
 
 	function login(email, password, onSuccess, onError){
 
-		$http.post('/api/auth/login', 
+		$http.post( baseUrl + '/api/auth/login', 
 		{
 			email: email,
 			password: password

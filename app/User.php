@@ -26,4 +26,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * This mutator automatically hashes the password.
+     *
+     * @var string
+     */
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = \Hash::make($value);
+    }
+
+    public function stores() {
+        return $this->hasMany('App\Store');
+    }
 }

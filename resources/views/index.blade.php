@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bookWishlistApp">
+<html lang="en" ng-app="cyberBlueApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,18 @@
         <title>Book Wishlist Application</title>
 
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="bower_components/lodash/lodash.js"></script>
-        <script src="bower_components/angular-route/angular-route.min.js"></script>
-        <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
-        <script src="bower_components/restangular/dist/restangular.min.js"></script>
-
+        <link href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet">
+        <link href="bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+        
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Raleway';
+                font-family: 'Roboto', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
@@ -74,17 +70,25 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Book Wishlist Application</h1>
-                </div>
-            </div>
+            <div ng-view></div>
         </div>
-        <div ng-view></div>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/services.js"></script>
-        <script src="js/controllers.js"></script>
     </body>
+
+    <script>
+        var baseUrl = "{{url('/')}}";
+    </script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="bower_components/restangular/dist/restangular.min.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 </html>

@@ -1,20 +1,14 @@
 <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-        <h2>Signup</h2>
-        <p>Welcome! If you want to sign up to our awesome service, fill this form and press on "Signup"!</p>
-        
-        <hr>
+	<div class="col-md-4 col-md-offset-4">
+		<h2>Đăng Ký</h2>
+		<p>Vui lòng điền Tên, Email và Password. Sau đó chọn "ĐĂNG KÝ"!</p>
 
-        <p><input type="text" class="form-control" placeholder="Name..." ng-model="name" required /></p>
-        <p><input type="text" class="form-control" placeholder="Email Address..." ng-model="email" required /></p>
-        <p><input type="password" class="form-control" placeholder="Password..." ng-model="password" required /></p>
+		<p><input type="text" class="form-control" placeholder="Name..." ng-model="name" required /></p>
+		<p><input type="text" class="form-control" placeholder="Email Address..." ng-model="email" required /></p>
+		<p><input type="password" class="form-control" placeholder="Password..." ng-model="password" required /></p>
 
-        <hr>
+		<p><button type="button" class="btn btn-success form-control" ng-click="signup()">ĐĂNG KÝ</button></p>
 
-        <p><button type="button" class="btn btn-success form-control" ng-click="signup()">Signup</button></p>
-
-        <hr>
-
-        <p><a href="#login">Already signed up? <b>Log in!</b></a></p>
-    </div>
+		<p><a href="#login">Already signed up? <b>Log in!</b></a></p>
+	</div>
 </div>
